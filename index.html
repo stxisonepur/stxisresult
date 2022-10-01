@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>STXIS result</title>
+
+    <link rel="icon" href="assets/img/favicon.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+        crossorigin="anonymous" />
+
+    <!-- google font  -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- font awesome  -->
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <!-- custom css  -->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <!-- navbar start  -->
+
+    <section id="nav-bar">
+        <header class="top-section">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar_logo.svg"
+                        style="height: 30px; padding-bottom: 4px; margin-right: 10px;">STXIS-Results</a>
+
+            </nav>
+        </header>
+    </section>
+
+    <!-- navbar end  -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- banner start  -->
+
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="legal-title text-center" style="color: #ffffff;">Half-Yearly Examination Result</br>
+                        </br>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner end  -->
+
+    <!-- about section start-->
+
+    <section id="result">
+        <div class="container">
+            </br>
+            <form action="result.php" method="post">
+                <div class="form-group">
+                    <label for="uName">Name</label>
+                    <input type="text" class="form-control" id="uName" placeholder="Enter Your Name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="uClass">Select Class</label>
+                    <select class="form-control" id="uClass" name="class">
+                        <option>LKG</option>
+                        <option>UKG</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="uRN">Roll Number</label>
+                    <input type="text" class="form-control" id="uRN" placeholder="Enter Your Roll No" name="RN">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </br>
+            </form>
+            
+            </br>
+
+        </div>
+    </section>
+
+    <!-- about section end  -->
+
+
+    <!-- footer section start -->
+
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12 my-3">
+                    <h6>&copy; 2022 <b>STXIS</b>
+                        </br>Website Designed By : <a href="">Pratabidya Mahapatra</a></br>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section end  -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"
+        integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js"
+        integrity="sha512-53CQcu9ciJDlqhK7UD8dZZ+TF2PFGZrOngEYM/8qucuQba+a+BXOIRsp9PoMNJI3ZeLMVNIxIfZLbG/CdHI5PA=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ=="
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('load', function () {
+            document.querySelector('body').classList.add("loaded")
+        });
+
+    </script>
+       
+    
+</body>
+
+</html>
